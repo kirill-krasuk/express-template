@@ -3,7 +3,7 @@
         "noImplicitAny": true,
         "moduleResolution": "node",
         "sourceMap": true,
-        "baseUrl": "src",
+        "baseUrl": "./app",
         "target": "es6",
         "module": "commonjs",
         "outDir": "./dist",
@@ -16,17 +16,12 @@
         "noFallthroughCasesInSwitch": true,
         "allowSyntheticDefaultImports": true,
 
-        // "paths": {
-		// 	"@core/*": ["src/core/*"],
-		// 	"@app/*": ["src/app/*"],
-		// 	"@ui-kit/*": ["src/ui-kit/*"],
-		// 	"@images/*": ["src/assets/images/*"],
-        //     "@svgs/*": ["src/assets/svgs/*"],
-		// 	"@server/*": ["server/*"],
-		// 	"@public/*": ["public/*"], 
-		// 	"@fonts/*": ["src/assets/fonts/*"],
-		// 	"@test/*": ["src/test/*"],
-        // },
+        "paths": {
+			"@utils/*": ["utils/*"],
+            "@config/*": ["config/*"],
+            "@template-utils/*": ["template-utils/*"],
+            "@paths": ["paths"]
+        },
     
         "esModuleInterop": true
     },

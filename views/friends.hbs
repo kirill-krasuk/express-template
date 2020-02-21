@@ -1,0 +1,7 @@
+{{#if hasFriends}}
+    {{#list list}}
+        {{>friends friend=.}}
+    {{/list}}
+{{^}}
+    <span class="title">No friends</span>
+{{/if}}
