@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "baseUrl": "src",
+        "target": "es6",
+        "module": "commonjs",
+        "outDir": "./dist",
+    
+        "strict": true,
+    
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "allowSyntheticDefaultImports": true,
+
+        // "paths": {
+		// 	"@core/*": ["src/core/*"],
+		// 	"@app/*": ["src/app/*"],
+		// 	"@ui-kit/*": ["src/ui-kit/*"],
+		// 	"@images/*": ["src/assets/images/*"],
+        //     "@svgs/*": ["src/assets/svgs/*"],
+		// 	"@server/*": ["server/*"],
+		// 	"@public/*": ["public/*"], 
+		// 	"@fonts/*": ["src/assets/fonts/*"],
+		// 	"@test/*": ["src/test/*"],
+        // },
+    
+        "esModuleInterop": true
+    },
+    "include": ["app/**/*"],
+    "exclude": ["node_modules", "**/*.test.ts"]
+}
